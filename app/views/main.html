@@ -1,10 +1,10 @@
 <div class="jumbotron">
-  <h1>Azo, Azo, Azo, Se viene el decretazo!</h1>
+  <h1>¡Azo, Azo, Azo, Se viene el decretazo!</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    <div><h4>Informaci&oacuten compilada por</h4><a href="https://www.facebook.com/La-Construcci%C3%B3n-Pensamiento-Nacional-543131722511523/"><img src="images/la_construccion_logo_small.png" alt="la construccion pensamiento nacional"></a><br></div>
 
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+
 </div>
 
 <div class="row marketing">
@@ -44,8 +44,8 @@
         <td>{{decree['gsx$fechapublicaciónbol.of.']['$t']}}</td>
         <td>{{decree['gsx$título']['$t']}}</td>
         <td>{{decree['gsx$descripción']['$t']}}</td>
-        <td><a ng-show="decree['gsx$linkoficial']['$t']" ng-href="decree['gsx$linkoficial']['$t']"><span title="link bolet&iacute;n oficial" class="glyphicon glyphicon-book"></span></a></td>
-        <td><a ng-show="decree['gsx$articulo']['$t']" ng-href="decree['gsx$articulo']['$t']"><span title="art&iacute;culo period&iacute;stico" class="glyphicon glyphicon-info-sign"></span></a></td>
+        <td><a ng-show="decree['gsx$linkoficial']['$t']" ng-href="{{decree['gsx$linkoficial']['$t']}}"><span title="link bolet&iacute;n oficial" class="glyphicon glyphicon-book"></span></a></td>
+        <td><a ng-show="decree['gsx$articulo']['$t']" ng-href="{{decree['gsx$articulo']['$t']}}"><span title="art&iacute;culo period&iacute;stico" class="glyphicon glyphicon-info-sign"></span></a></td>
         <td><span ng-show="decree['gsx$esdnu']['$t']" class="label label-danger">DNU</span></td>
       </tr>
     </tbody
