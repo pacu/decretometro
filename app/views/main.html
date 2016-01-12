@@ -44,7 +44,7 @@
         <td>{{decree['gsx$fechapublicaciónbol.of.']['$t']}}</td>
         <td>{{decree['gsx$título']['$t']}}</td>
         <td>{{decree['gsx$descripción']['$t']}}</td>
-        <td><a ng-href="decree['gsx$linkoficial']['$t']"><span title="link bolet&iacute;n oficial" class="glyphicon glyphicon-book"></span></a></td>
+        <td><a ng-show="decree['gsx$linkoficial']['$t']" ng-href="decree['gsx$linkoficial']['$t']"><span title="link bolet&iacute;n oficial" class="glyphicon glyphicon-book"></span></a></td>
         <td><a ng-show="decree['gsx$articulo']['$t']" ng-href="decree['gsx$articulo']['$t']"><span title="art&iacute;culo period&iacute;stico" class="glyphicon glyphicon-info-sign"></span></a></td>
         <td><span ng-show="decree['gsx$esdnu']['$t']" class="label label-danger">DNU</span></td>
       </tr>
